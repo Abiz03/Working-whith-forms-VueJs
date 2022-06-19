@@ -22,10 +22,10 @@ const handlingForms = {
     methods: {
         addMember() {
             if(this.newMember.fname && this.newMember.lname && this.newMember.instruments) {
+                alert('Fill all fields')
+            } else {
                 this.members.push(this.newMember);
                 this.newMember = {}
-            } else {
-                alert('Fill all fields')
             }
         }
     },
